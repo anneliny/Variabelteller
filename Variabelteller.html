@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel teller</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+<div>
+    Variabel teller
+</div>
+<div id="output">0</div>
+<button onclick="setnumberlow(1)">Lavere</button>
+<button onclick="setnumberhigh(100)">Høyere</button>
+
+
+
+<style>
+    body {
+        padding: 200px;
+    }
+    div { 
+        font-size: 100px;
+        color: rgb(17, 30, 10);
+        border:solid 1px; 
+        width: 700px;
+        text-align: center;
+    }
+    button {
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        align-self: center;
+        padding: 10px;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+</style>
+
+<script>
+    
+    var outputup = document.getElementById('output');
+    var numbertoshow = 0;
+
+    function setnumberlow(valgt){
+    numbertoshow = 0;
+    outputup.innerHTML = numbertoshow;
+    }
+
+    function setnumberlow(){
+    numbertoshow --;
+    outputup.innerHTML = numbertoshow; 
+    }
+
+    function setnumberhigh(){
+    numbertoshow ++;
+    outputup.innerHTML = numbertoshow;
+    }
+
+    
+    
+</script>
+
+</body>
+</html>
